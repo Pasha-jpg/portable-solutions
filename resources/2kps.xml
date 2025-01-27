@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CAT>
+ 
+ <PRODUCT>
+ 	 
+	 <FEATURE>Capacity</FEATURE>
+	 <DETAILS>2048Wh (160Ah) with a Lithium LiFePO4 battery</DETAILS>
+ </PRODUCT>
+ <PRODUCT>
+ 	
+	 <FEATURE>Outputs</FEATURE>
+	 <DETAILS>3 x 240V Pure Sine Wave AC (2000W), 2 x USB-C PD (100W), 2 x USB QC (18W), 2 x USB (2.4A), 1 x 12V Cigarette Socket, 1 x XT60 (12V/25A)</DETAILS>
+ </PRODUCT>
+ <PRODUCT>
+ 	
+	 <FEATURE>Inputs</FEATURE>
+	 <DETAILS>240V AC mains, 12V 10A car socket, max 500W Solar(requires unregulated input).</DETAILS>
+ </PRODUCT>
+ <PRODUCT>
+ 	
+	 <FEATURE>Solar Charging with 360w Panel</FEATURE>
+	 <DETAILS>6 hours in uninterpted sun</DETAILS>
+ </PRODUCT>
+ <PRODUCT>
+ 	
+	 <FEATURE>Charge Time (AC)</FEATURE>
+	 <DETAILS>0-80% in 1 hour with 1100W supercharge technology</DETAILS>
+ </PRODUCT>
+  <PRODUCT>
+ 	
+	 <FEATURE>Applications</FEATURE>
+	 <DETAILS>Powers fridges (approx 3-4 days), laptops, speakers, microwaves, coffee machines, CPAP devices, etc.</DETAILS>
+ </PRODUCT>
+  <PRODUCT>
+ 	
+	 <FEATURE>Other Features</FEATURE>
+	 <DETAILS>Pass-through charging, 6-month charge retention, informative LCD display, UPS functionality</DETAILS>
+ </PRODUCT>
+ <PRODUCT>
+ 	
+	 <FEATURE>Weight and Portability</FEATURE>
+	 <DETAILS>Approx 22kg, compact for a 2000W unit.</DETAILS>
+ </PRODUCT>
+</CAT>
