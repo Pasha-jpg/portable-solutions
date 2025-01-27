@@ -1,0 +1,226 @@
+
+html { 
+  background:transparent;
+}
+
+body {
+  background-color: var(--white);  
+  max-width: 1960px;
+  min-width: 250px;
+  margin: auto;
+  height: auto; 
+  border: 1px solid var(--black);
+  box-sizing: border-box; 
+}
+
+header{width: 100%; background-color: var(--white);}
+#logo{ width: 70%; margin-top:2%; }
+
+/*---variable---*/
+:root {
+  --orange:#F28C28;
+  --white: #ffffff;
+  --black:#000000;
+}
+
+/*-----HEADINGS-----*/
+h1{
+	font-family: Verdana;
+	font-size: 4vw;
+	color: black;
+  text-align: center;
+  text-shadow: -1px 0 var(--orange), 0 1px var(--orange),
+   1px 0 var(--orange), 0 -1px var(--orange);
+ 
+}
+h2{
+  font-family: Verdana;
+  font-size: 4vw;
+  color: black;
+  text-align: center;
+  text-shadow: -1px 0 var(--orange), 0 1px var(--orange),
+   1px 0 var(--orange), 0 -1px var(--orange);
+}
+h3{
+  font-family: Verdana;
+  font-size: 2.5vw;
+  color: black;
+  text-align: center;
+  text-shadow: -1px 0 var(--orange), 0 1px var(--orange),
+   1px 0 var(--orange), 0 -1px var(--orange);
+}
+strong{
+  color: orangered;
+  }
+nav{
+  margin:auto;
+  width: 100%;
+ background: black;
+
+}
+li{
+  display: inline-block;
+  font-family:Verdana;
+  margin-left: 6%;
+  font-size: x-large;
+  padding: 0.5%;  
+}
+a{
+  text-decoration: none;
+  color: var(--orange);
+}
+
+a:hover {color:var(--white);}
+.main{
+  width: 100%;
+  height:auto;
+  font-family: Verdana;  
+  color: black;
+  clear:both;
+
+  }
+.first{
+  width: 96%;
+  padding: 2%;
+  height:auto;
+  font-size: x-large; 
+  clear: both; }
+
+  span{
+    font-weight: bold;
+    color: orangered;
+  }
+
+
+
+
+
+footer{
+  margin: auto;
+  width: 100%;
+  background-color:var(--black);
+  color:var(--orange);
+  font-size: x-large;
+  
+}
+.fa p{font-family: Verdana;}
+.f{width: 10%;}
+.fa{padding: 1%;width: 80%; font-family: }
+.fb{padding: 1%; width: 48%;}
+
+.media-nav{display: none;}
+
+
+
+/*------SCREEN SIZES---------*/
+
+@media screen and (max-width: 1024px) {
+  .first{height: auto;}
+  .second{height: auto;}
+ 
+  li{margin-left: 5%;}
+}
+
+@media screen and (max-width: 1000px) {
+li{margin-left: 5%;}
+}
+
+/*------640 screen size-------*/
+
+@media screen and (max-width: 640px) {
+html{background:transparent;}
+h1{display: none;}
+nav {display: none;}
+h2{font-size: 5vw;}
+h3{font-size: 6vw;}
+li{margin-left: 6%;}
+
+.first{padding: 1%;height: auto; width: 98%;font-size: 5vw;}
+
+
+
+
+/*-----HAMBURGERMENU-----*/
+.media-nav {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+  }
+
+
+  /* Style the navigation menu */
+  .topnav {
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    background: var(--white);
+    z-index: 1;
+
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    background: var(--black);
+    width: 96%;
+    border-radius: 10px;
+    border: 1px solid var(--orange);
+    box-sizing: border-box;
+    padding: 2%;
+    float: right;
+    clear: both;
+
+
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: var(--orange);
+    padding: 2%;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: Verdana;
+    display: block;
+    
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: var(--white);
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    width: auto;
+
+
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    box-shadow: none;
+    color: var(--black);
+    background-color: var(--white);
+    transition-duration: 0.1s;
+
+  }
+
+  footer{
+ 
+  font-size: medium;
+  
+}
+.f{width: 10%;}
+.fa{padding: 1%;width: 90%;}
+.fb{padding: 1%; width: 90%;}
+
+  
+
+}
+
+
+
+
+
+}
