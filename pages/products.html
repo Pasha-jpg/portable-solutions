@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+    <meta name="description" content="Camping Products hire Solutions">
+    <link rel="canonical" href="#">
+    <link rel="shortcut icon" type="image/jpg" href="../images/lo.jpg">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="icon" href="../favicon.jpg">
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' https://i.creativecommons.org https://licensebuttons.net ;">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<title>Portable Solutions</title>
+	</head>
+	<body>
+		<header>
+
+			<h1> 
+				<img id="logo" src="../images/loo.jpg" alt="trademark logo">
+				
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="../index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="products.html">PRODUCTS</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="policy.html">POLICY</a></li>
+					<li><a href="faqs.html">FAQS</a></li>
+				</ul>
+			</nav>
+
+			<div class="media-nav">
+        <!-- Simulate a smartphone / tablet -->
+        <div class="mobile-container">
+          <!-- Top Navigation Menu -->
+          <div class="topnav">
+           <h2 class="active"> 
+				     <a href=""> <img id="logo" src="../images/loo.jpg" 
+				     	alt="trademark logo"></a>
+				    
+			     </h2>
+           <div id="myLinks">
+             <a href="../index.html" aria-label="home">HOME</a>
+             <a href="about.html" aria-label="aboutus">ABOUT</a>
+             <a href="products.html" aria-label="products">PRODUCTS</a>
+             <a href="contact.html" aria-label="contact">CONTACT</a>
+             <a href="policy.html" aria-label="policy">POLICY</a> 
+             <a href="faqs.html" aria-label="faqs">FAQS</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" aria-label="hamburger-menu" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div><!--topnav-->
+        </div><!--mob container-->
+      </div><!--media-nav-->
+      <!-- End smartphone / tablet look -->
+		</header>
+		<div class="main">
+			<div id="myBtnContainer">
+			  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+			  <button class="btn" onclick="filterSelection('nature')"> Power bank</button>
+			  <button class="btn" onclick="filterSelection('cars')"> Fridge</button>
+			  <button class="btn" onclick="filterSelection('people')"> Rechargable LED</button>
+			</div>
+
+			<!-- Portfolio Gallery Grid -->
+			<div class="row">
+			  <div class="column nature">
+			    <div class="content">
+			      <img src="../images/a.jpg" alt="Powerbank" style="width:100%">
+			      <h4>800w Portable power station / 200w Solar Blanket</h4>
+			     
+			       <a href="../pages/contact.html">
+			      	<button name="Enquire">Enquire </button>
+			      </a>
+			      
+			    </div>
+			  </div>
+			  <div class="column nature">
+			    <div class="content">
+			    <img src="../images/b.jpg" alt="powerbank2" style="width:100%">
+			      <h4>2000w Power station / 360w Solar Blanket</h4>
+			      
+			       <a href="../pages/contact.html">
+			      	<button name="Enquire">Enquire </button>
+			      </a>
+			      <a href="../pages/2kps.html">
+			      	<button name="detail">Details </button>
+			      </a>
+			    </div>
+			  </div>
+			  			  
+			  <div class="column cars">
+			    <div class="content">
+			    <img src="../images/d.png" alt="fridge2" style="width:100%">
+			      <h4>75L Dual Zone Fridge Freezer</h4>
+			     
+			       <a href="../pages/contact.html">
+			      	<button name="Enquire">Enquire </button>
+			      </a>
+			      
+			    </div>
+			  </div>
+			  
+
+			  <div class="column people">
+			    <div class="content">
+			      <img src="../images/e.jpg" alt="led" style="width:100%">
+			      <h4>LED 10m string lighting</h4>
+			     
+			       <a href="../pages/contact.html">
+			      	<button name="Enquire">Enquire </button>
+			      </a>
+			    </div>
+			  </div>
+			  <!--
+			  <div class="column people">
+			    <div class="content">
+			   
+			    </div>
+			  </div>-->
+			  
+			<!-- END GRID -->
+			</div>
+
+		</div>
+			<footer>
+			<div class="fa">
+				<p>
+				 
+					Managing Director:  Benjamin John Beitz<br>
+					Email : portable.solutions@outlook.com <br>
+					Phone : +61430209229 <br>
+					Office: SCARBOROUGH, WA <br>
+				</p>
+			</div>
+			<div class="fb">
+				<p>
+				<a href="https://www.facebook.com/share/1B9xbz7pFR/">
+				 <img src="../images/f.png" class="f" alt="fb icon">
+				</a>
+				<a href="#">
+				 <img src="../images/w.png" class="f"alt="whatsapp icon">
+				</a>
+				<a href="#">
+				 <img src="../images/i.png" class="f" alt="linkdin icon">
+				</a>
+				<a href="#">
+				 <img src="../images/g.png" class="f" alt="googleicon">
+				</a>
+			 </p>
+			</div>
+			
+
+		</footer>
+		
+		<script src="../js/script.js"></script>
+		
+    <script>
+			filterSelection("all")
+			function filterSelection(c) {
+			  var x, i;
+			  x = document.getElementsByClassName("column");
+			  if (c == "all") c = "";
+			  for (i = 0; i < x.length; i++) {
+			    w3RemoveClass(x[i], "show");
+			    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			  }
+			}
+
+			function w3AddClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+			    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+			  }
+			}
+
+			function w3RemoveClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+			    while (arr1.indexOf(arr2[i]) > -1) {
+			      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+			    }
+			  }
+			  element.className = arr1.join(" ");
+			}
+
+
+			// Add active class to the current button (highlight it)
+			var btnContainer = document.getElementById("myBtnContainer");
+			var btns = btnContainer.getElementsByClassName("btn");
+			for (var i = 0; i < btns.length; i++) {
+			  btns[i].addEventListener("click", function(){
+			    var current = document.getElementsByClassName("active");
+			    current[0].className = current[0].className.replace(" active", "");
+			    this.className += " active";
+			  });
+			}
+			</script>
+
+	</body>
+</html>

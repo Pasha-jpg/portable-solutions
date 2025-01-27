@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+    <meta name="description" content="Camping Products hire Solutions">
+    <link rel="canonical" href="#">
+    <link rel="shortcut icon" type="image/jpg" href="../images/lo.jpg">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="icon" href="../favicon.jpg">
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' https://i.creativecommons.org https://licensebuttons.net ;">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<title>Portable Solutions</title>
+	</head>
+	<body>
+		<header>
+
+			<h1> 
+				<img id="logo" src="../images/loo.jpg" alt="trademark logo">
+				
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="../index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="products.html">PRODUCTS</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="policy.html">POLICY</a></li>
+					<li><a href="faqs.html">FAQS</a></li>
+				</ul>
+			</nav>
+
+			<div class="media-nav">
+        <!-- Simulate a smartphone / tablet -->
+        <div class="mobile-container">
+          <!-- Top Navigation Menu -->
+          <div class="topnav">
+           <h2 class="active"> 
+				     <a href=""> <img id="logo" src="../images/loo.jpg" 
+				     	alt="trademark logo"></a>
+				    
+			     </h2>
+           <div id="myLinks">
+             <a href="../index.html" aria-label="home">HOME</a>
+             <a href="about.html" aria-label="aboutus">ABOUT</a>
+             <a href="products.html"aria-label="products">PRODUCTS</a>
+             <a href="contact.html" aria-label="contact">CONTACT</a>
+             <a href="policy.html" aria-label="policy">POLICY</a> 
+             <a href="faqs.html" aria-label="faqs">FAQS</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" aria-label="hamburger-menu" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div><!--topnav-->
+        </div><!--mob container-->
+      </div><!--media-nav-->
+      <!-- End smartphone / tablet look -->
+		</header>
+		<div class="main">
+			<h3>Enquiry form </h3>
+			<div class="first">
+				<form action="../php/action.php" method="post" id="theForm"  autocomplete="on">
+          <fieldset><legend></legend>                          
+            <div class="two">
+                <label for="firstName">First Name </label><br>
+                <input type="text" name="first_name" id="firstName" required  >
+            </div>
+            <div class="two">
+              <label for="lastName">Last Name</label><br>
+              <input type="text" name="last_name" id="lastName" required >
+            </div>
+            <div class="two">
+             <label for="email">Email Address</label><br>
+             <input type="email" name="email" id="email" required>
+            </div>
+            <div class="two">
+             <label for="start">Start Date</label><br>
+             <input type="date" name="start" id="start" >
+            </div>  
+            <div class="two">
+             <label for="end">End Date</label><br>
+             <input type="date" name="end" id="end" >
+            </div>                                             
+            <div class="two">
+              <label for="state">Purpose of Enquiry</label><br>
+                <select name="state" id="state" >
+                  <option value="null">Select</option> 
+                  <option value="blog">Equipment hire</option> 
+                  <option value="buy">Change booking</option> 
+                  <option value="buy">Availability</option>
+                  <option value="others">others</option>                  
+                </select>
+            </div>    
+            <div class="two">
+              <label for="comments">Comments</label><br>
+              <textarea  name="comments" id="comments" ></textarea>
+            </div>                         
+            <div class="one">                           
+              <input type="submit" value="SUBMIT" id="submit" aria-label ="submit" >
+            </div>
+          </fieldset>
+        </form>
+      </div> <!--first--> 
+     
+		</div>
+		<footer>
+			<div class="fa">
+				<p>
+				 
+					Managing Director:  Benjamin John Beitz<br>
+					Email : portable.solutions@outlook.com <br>
+					Phone : +61430209229 <br>
+					Office: SCARBOROUGH, WA <br>
+				</p>
+			</div>
+			<div class="fb">
+				<p>
+				<a href="https://www.facebook.com/share/1B9xbz7pFR/">
+				 <img src="../images/f.png" class="f" alt="fb icon">
+				</a>
+				<a href="#">
+				 <img src="../images/w.png" class="f"alt="whatsapp icon">
+				</a>
+				<a href="#">
+				 <img src="../images/i.png" class="f" alt="linkdin icon">
+				</a>
+				<a href="#">
+				 <img src="../images/g.png" class="f" alt="googleicon">
+				</a>
+			 </p>
+			</div>	
+			
+
+		</footer>
+		
+		<script src="../js/script.js"></script>
+
+	</body>
+</html>

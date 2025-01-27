@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="description" content="XML Document pcat">
+    <link href="css/list.css" rel="stylesheet" type="text/css">
+    <title>Product details</title>
+  </head>
+  <body>
+    <header>
+    <h1>Product details </h1>
+    
+   </header>
+  <div class="main">
+    <a href="../pages/products.html">Back Product page</a>
+    <h2> 2000w Power station / 360w Solar Blanket </h2>
+    <img src="../images/b.jpg" id="pimg" alt="product image">
+    <p><strong>Cost:</strong><br>$42 / 1-2 days - $40 / 3-7 days - $35 / 8-14 days</p>
+    <div class="a">
+      <table id="demo"></table>
+    </div>
+  </div> <!--main close-->
+
+  <script>
+      
+    function loadDoc() {
+      "use strict";
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          myFunction(this);
+        }
+      };
+      xhttp.open("GET", "../resources/2kps.xml", true);
+      xhttp.send();
+    }
+    function myFunction(xml) {
+      "use strict";
+      var i;
+      var xmlDoc = xml.responseXML;
+      var table="<tr><th>Features</th><th>Details</th><th></tr>";
+      var x = xmlDoc.getElementsByTagName("PRODUCT");
+      for (i = 0; i <x.length; i++) { 
+         
+                
+        table += "<tr><td>" +
+        
+        x[i].getElementsByTagName("FEATURE")[0].childNodes[0].nodeValue +
+        "</td><td>"+
+        x[i].getElementsByTagName("DETAILS")[0].childNodes[0].nodeValue +
+        "</td></tr>"; 
+       
+      }
+      document.getElementById("demo").innerHTML = table;
+    }
+    function init() {
+
+        "use strict";
+
+        loadDoc("");
+    }
+
+    window.onload = init;
+
+    </script>
+    <style> 
+      h1{
+        font-family: Verdana;
+        text-align: center;
+        font-size: 2vw;
+      }
+
+      p{font-size: 1.75vw;}
+      td{
+        width: 48%;
+        border: 1px solid white;
+        box-sizing: border-box; 
+        padding: 2%;
+        font-size: large;
+      } 
+      .main{
+        width: 80%;
+        padding: 2%;
+        margin: auto;
+        font-family: Verdana;
+        font-size: 2vw;
+        background-color: orange;
+      }
+      #pimg{width: 30%; margin: auto;}
+
+      @media screen and (max-width: 640px) {
+        td{font-size: 2vw;}
+
+      }
+    </style>
+  </body>
+</html>
